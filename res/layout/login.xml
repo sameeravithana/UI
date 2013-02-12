@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black"
+    >
+
+    <TextView
+        android:id="@+id/topictv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:text="Please enter username and password"
+        android:textColor="@android:color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/unametv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/topictv"
+        android:layout_marginTop="47dp"
+        android:text="Username"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/usernameet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/unametv"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/pastv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/unametv"
+        android:layout_below="@+id/usernameet"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/paswrdet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pastv"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bsubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/paswrdet"
+        android:layout_marginTop="42dp"
+        android:text="Submit"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/resulttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsubmit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Invalid" 
+        android:textColor="@android:color/white"
+        android:textSize="30dp"
+        />
+
+</RelativeLayout>

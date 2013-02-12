@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mywork.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <uses-library android:name="com.google.android.maps"/>
+        <activity
+            android:name="com.mywork.splash.MainSplash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       <activity 
+           android:name="com.mywork.ui.Profile"
+           ></activity>
+       <activity 
+           android:name="com.mywork.ui.Login"
+           ></activity>
+       
+       <activity 
+           android:name="com.mywork.ui.MainInterface"
+           ></activity>
+       <activity 
+           android:name="com.mywork.ui.Main"
+           ></activity>
+       <activity 
+           android:name="com.mywork.ui.CustomPinpoint"
+           ></activity>
+        <activity 
+           android:name="com.mywork.ui.Intelligence"
+           ></activity>
+         <activity 
+           android:name="com.mywork.ui.Community"
+           ></activity>
+          <activity 
+           android:name="com.mywork.ui.Favourits"
+           ></activity>
+           <activity 
+           android:name="com.mywork.ui.TourAnalyzer"
+           ></activity>
+            <activity 
+           android:name="com.mywork.ui.Settings"
+           ></activity>
+             <activity 
+           android:name="com.mywork.ui.MyTours"
+           ></activity>
+              <activity 
+           android:name="com.mywork.ui.BarChart"
+           ></activity>
+               <activity 
+            android:name="com.mywork.place.AlertDialogManager"
+            ></activity>
+         <activity 
+            android:name="com.mywork.place.ConnectionDetector"
+            ></activity>
+          <activity 
+            android:name="com.mywork.place.GooglePlaces"
+            ></activity>
+           <activity 
+            android:name="com.mywork.place.GPSTracker"
+            ></activity>
+            <activity 
+            android:name="com.mywork.place.Place"
+            ></activity>
+             <activity 
+            android:name="com.mywork.place.PlaceDetails"
+            ></activity>
+              <activity 
+            android:name="com.mywork.place.PlaceList"
+            ></activity>
+               <activity 
+            android:name="com.mywork.place.SinglePlaceActivity"
+            ></activity>
+               <activity 
+            android:name="com.mywork.place.PlacesMain"
+            ></activity>
+    </application>
+
+</manifest>

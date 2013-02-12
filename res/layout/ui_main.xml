@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rl1"
+    android:background="@android:color/background_dark"
+    >
+
+    <ImageButton
+        android:id="@+id/favourits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newtour"
+        android:layout_centerVertical="true"
+        android:background="@android:color/black"
+        android:src="@drawable/bookmark" />
+
+    <ImageButton
+        android:id="@+id/newtour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/favourits"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="56dp"
+        android:layout_marginLeft="33dp"
+        android:background="@android:color/black"
+        android:src="@drawable/travel" />
+
+    <ImageButton
+        android:id="@+id/communityhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intelligence"
+        android:layout_below="@+id/newtour"
+        android:background="@android:color/black"
+        android:src="@drawable/community" />
+
+    <TextView
+        android:id="@+id/newtourtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newtour"
+        android:layout_below="@+id/intelligence"
+        android:layout_marginLeft="16dp"
+        android:text="New Tour"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <ImageButton
+        android:id="@+id/intelligence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/newtour"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/black"
+        android:src="@drawable/find" />
+
+    <TextView
+        android:id="@+id/intelligenttourtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/newtourtv"
+        android:layout_alignBottom="@+id/newtourtv"
+        android:layout_alignRight="@+id/intelligence"
+        android:text="Intelligent Tour"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/favouritstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newtourtv"
+        android:layout_below="@+id/favourits"
+        android:text="Favourits"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/communitytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/favouritstv"
+        android:layout_alignBottom="@+id/favouritstv"
+        android:layout_alignLeft="@+id/intelligenttourtv"
+        android:text="Community"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+         
+</RelativeLayout>
